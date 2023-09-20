@@ -1,7 +1,0 @@
-package tut09;
-
-public class ArrEx01 {
-	public static void main(String[] args) {
-		
-	}
-}
