@@ -1,0 +1,16 @@
+package tut07;
+
+import java.util.Scanner;
+
+public class BalanceEx {
+	public static void main(String[] args) {
+		System.out.println("-------------------------------");
+		System.out.println("1.예금|2.출금|3.잔고|4.종료");
+		System.out.println("-------------------------------");
+		System.out.print("선택> ");
+		
+		Scanner sc = new Scanner(System.in);
+		int menu = sc.nextInt();
+		
+	}
+}

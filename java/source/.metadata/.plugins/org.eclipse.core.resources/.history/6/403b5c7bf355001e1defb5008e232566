@@ -1,0 +1,8 @@
+package tut07_2;
+
+public class WebEx {
+	public static void main(String[] args) {
+		Hello h = new Hello();
+		h.welcome();
+	}
+}
