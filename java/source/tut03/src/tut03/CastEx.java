@@ -12,7 +12,7 @@ public class CastEx {
 		float f2 = 1.23F;
 		int i2 = (int)f2;
 		System.out.println(i2);
-		
+		  
 		System.out.println("------------------------");
 		
 		double d1 = 1.23;

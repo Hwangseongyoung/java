@@ -3,5 +3,8 @@
     <fullyQualifiedTypeName name="java.awt.print.Printable"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="tut10.dao.ScoresDao"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="emp.service.EmployeeSrv"/>
 </qualifiedTypeNameHistroy>

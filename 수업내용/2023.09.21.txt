@@ -1,0 +1,79 @@
+구글 material
+
+폰트
+https://fonts.google.com   --->   A1, Noto Sans
+			      roboto, Poppins
+
+fontawesome
+https://fontawesome.com
+
+사진
+https://unsplash.com
+
+------------------------------------------------------------------------------------
+
+tut10
+RegisterEx.java
+Register.java
+
+객체 : vo, dto, entity, model
+dto > Register.java -> 객체 생성
+
+1. 객체 + 배열 = 회원가입[3]
+2. 필드
+   이메일
+   비밀번호
+   이름
+3. 생성자를 통해서 저장
+4. 회원 수 출력
+   회원 목록
+
+======================================================
+
+☆★☆★☆★☆★생성자, getter, setter 저장 => 생성자 초기화!!!!!☆★☆★☆★
+
+arr[i] = new Register();
+
+list.add( new Register() )
+
+값 -> 초기화 + set객체 -> db, hd : 값 저장할 때
+
+값 <- 초기화 + get객체 <- db, hd : 값 불러올 때
+
+------------------------------------------------------------------------------------
+
+Article.java
+필드
+번호, 제목, 조회수, 등록일
+
+ArticleEx.java
+
+------------------------------------------------------------------------------------
+
+ScoresEx.java
+
+<출력화면>
+1. 학생 수 | 2. 점수입력 | 3. 점수출력 | 4. 평균 | 5. 최고점수 | 6. 종료
+
+dao패키지 생성 > ScoresDao.java
+
+------------------------------------------------------------------------------------
+
+emp
+EmployeesEx.java
+
+-service(패키지)
+   EmployeeSrv.java
+-vo(패키지)
+   Employee.java
+
+객체 empID
+db   emp_id
+
+필드
+부서 -> 문자열 -> buseo, depart
+사번 -> "900900001" -> num, id, emp_id
+이름 -> 문자열 -> name, emp_name
+급여 -> 정수 -> emp_salary, money
+입사일 -> 날짜 -> startDate
+퇴사일 -> 날짜 -> endDate
