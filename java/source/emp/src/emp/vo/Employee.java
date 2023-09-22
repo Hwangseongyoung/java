@@ -15,13 +15,11 @@ public class Employee {
 //	생성자 : 기본, 매개변수
 	public Employee() {}
 	
-	public Employee(Long id, String dept, String name, int salary, LocalDate startDate, LocalDate endDate) {
+	public Employee(Long id, String dept, String name, int salary) {
 		this.id = id;
 		this.dept = dept;
 		this.name = name;
 		this.salary = salary;
-		this.startDate = startDate;
-		this.endDate = endDate;
 	}
 
 	
