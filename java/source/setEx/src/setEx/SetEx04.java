@@ -11,14 +11,12 @@ public class SetEx04 {
 		 
 		 System.out.println("---------------------------------------");
 		 
-		 boolean result = dao.deleteRegister(101);
-		 System.out.println(result);
+		 boolean result = dao.deleteRegister(102);
 		 if(result) {
 			 System.out.println("삭제되었습니다.");
 		 }else {
-			 System.out.println("존재하지 않는 아이디입니다.");
+			 System.out.println("존재하지 않는 회원번호입니다.");
 		 }
-		 
 		 dao.showInfo();
 	}
 }

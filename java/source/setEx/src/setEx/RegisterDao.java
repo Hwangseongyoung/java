@@ -13,18 +13,33 @@ public class RegisterDao {
 		set.add(r);
 	}
 	
-	public boolean deleteRegister(int id) {
-//		삭제되면 true, 아니면 false
+//	List index 번호로 구분 : get(i)
+//	Set 값(객체)로 구분
+//	Map key 구분
+//	public boolean deleteRegister(int num) {
+////		for2
+//		for(Register r : set) {
+//			if(num==r.getId()) {
+//				set.remove(r);
+//				return true;
+//			}
+//		}
+//		return false;
+//	}
+	
+	public boolean deleteRegister(int num) {
 		Iterator<Register> ir = set.iterator();
 		while(ir.hasNext()) {
-			int tmp = ir.next().getId();
-			if(tmp==id) {
-				ir.remove();
+			Register reg = ir.next();
+			int tmp = reg.getId();
+			if(tmp==num) {
+				set.remove(reg);
 				return true;
 			}
 		}
 		return false;
 	}
+	
 	
 	public void showInfo() {
 		for(Register reg : set) {
