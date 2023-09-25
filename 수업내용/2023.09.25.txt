@@ -1,0 +1,45 @@
+★List : 순서-중복값 허용
+Set : 중복값 허용X
+★Map : 중복키 허용X
+
+forEach()
+
+컴퓨터에서 시간 1/1000
+
+file입출력 : 파일 업로드 시 변환 -> 1. hwp, 1. hwp -> uuid, date     :    파일명의 중복을 없애기 위해
+			       2023-09-25.hwp / 21421542.hwp
+static, singleton
+
+
+List03
+Member.java  MemberDao.java   MemberEx.java
+
+회원정보를 출력하세요.
+회원아이디 : 000, 회원비밀번호 0000;
+   String                String
+                생성자
+
+List<Member>
+
+------------------------------------------------------------------------------------------------------------------------------
+
+List -> ArrayList
+add, remove
+
+Set -> HashSet : 중복된 값 허용X
+add, remove
+
+setEx01 -> SetEx01.java
+
+SetEx02.java
+
+SetEx03.java
+
+SetEx04.java -> main
+Register.java -> 객체
+RegisterDao.java -> add, delete, show 동작
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Map -> HashMap : 중복된 값은 허용하지만 중복된 키는 허용X
+put
