@@ -35,3 +35,81 @@ DateEx.java
 -----------------------------------------------------------------------------------------
 
 CharSetEx.java
+
+-----------------------------------------------------------------------------------------
+
+StreamEx01.java
+
+웹
+
+db_url
+db_userid
+db_passwd
+
+*.properties -> 프론트
+
+naver.com를 예로들면
+
+포트번호
+naver.com:80(80생략가능)
+naver.com:25
+naver.com:22
+naver.com:55
+naver.com:8080 -> spring으로 만들었다(포트번호)
+
+웹서비스 종류
+홈페이지
+Ftp(파일업로드)
+Ssh(원격접속)
+dns(도메인 서버)
+
+-----------------------------------------------------------------------------------------
+
+파일, 이미지, 첨부파일 -> byte[]
+StreamEx02.java
+
+-----------------------------------------------------------------------------------------
+
+inherEx00.java : 프로젝트
+
+AutoEx.java
+
+Vehicle.java
+- model, color;
+- void start(), void stop()
+
+HyundaiEx.java
+- model, color;   ----> 상속
+- void start(), void stop()   ----> 상속
+- name = 소나타
+
+KiaEx.java
+- model, color;   ----> 상속
+- void start(), void stop()   ----> 상속
+- name = k5
+
+클래스이름 extends 가져올 클래스명
+
+상속 : 새로 만드는게 아니라 기존에 있는 자료를 물려 받아서 사용
+강제성, 강제성X
+다중상속, 다중상속X
+다형성(부모(new Child2)) - polymorphism
+
+interface 만들 때 - 몸통X => add()
+inter Cals{
+	public void sum();
+}
+implements 사용할 때
+강제성을 띄는 override :
+부모 생성자()를 가져다 쓰면
+super();	super.title
+내 생성잘르 가져다 쓰면
+this();	this.title;
+
+
+상속 extends
+상속,
+오버라이드
+추상화
+인터페이스
+다형성
