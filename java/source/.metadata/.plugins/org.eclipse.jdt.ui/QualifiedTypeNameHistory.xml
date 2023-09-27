@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="list02.Member"/>
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -23,4 +22,17 @@
     <fullyQualifiedTypeName name="inherEx01.LapTop"/>
     <fullyQualifiedTypeName name="inherEx01.Cals"/>
     <fullyQualifiedTypeName name="inherEx01.AdvCals"/>
+    <fullyQualifiedTypeName name="inherEx01.Android"/>
+    <fullyQualifiedTypeName name="inherEx01.AppleCell"/>
+    <fullyQualifiedTypeName name="inherEx01.Computer"/>
+    <fullyQualifiedTypeName name="inherEx01.QueryEx"/>
+    <fullyQualifiedTypeName name="inherEx01.Mysql"/>
+    <fullyQualifiedTypeName name="inherEx01.Oracle"/>
+    <fullyQualifiedTypeName name="inherEx01.OSystem"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="inherEx01.LinuxEx"/>
+    <fullyQualifiedTypeName name="inherEx01.AppleEx"/>
+    <fullyQualifiedTypeName name="inherEx01.OsStarat"/>
+    <fullyQualifiedTypeName name="inherEx01.Microsoft"/>
 </qualifiedTypeNameHistroy>
