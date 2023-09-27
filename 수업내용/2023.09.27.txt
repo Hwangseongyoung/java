@@ -1,0 +1,58 @@
+wrox, oreilly
+
+inheritance
+
+inherEx01
+
+클론 프로젝트
+
+
+Add.
+add, title, turnOn(), turnOff()
+
+Desktop : 계산기 extends Add 
+- ms
+new 생성자()
+
+Laptop : 계산기 extends Add
+- mac
+new 생성자()
+
+실행 InherEx01.java
+
+-------------------------------------------------------------------------------------------
+
+InherEx02.java
+
+1. 더하기, 빼기 : Cals.java
+    - 메인
+
+2. 더하기, 빼기 : Cals.java
+   추가 : 곱하기, 나누기 : AdvCals.java
+    - 메인
+
+-------------------------------------------------------------------------------------------
+
+사람클래스 : Person.java
+이름, 나이
+void 잠(), void 식사()
+
+학생클래스 : Std.java
+학번
+학생은 공부를 합니다.
+
+사원클래스 : Emp.java
+사번
+출근합니다.
+
+IherEx03.java
+
+-------------------------------------------------------------------------------------------
+
+Phone.java
+모델, 생상
+전원 on, off
+
+InherEx04.java
+
+Android.java  --> super()

@@ -19,4 +19,8 @@
     <fullyQualifiedTypeName name="java.io.OutputStream"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.Closeable"/>
+    <fullyQualifiedTypeName name="inherEx01.DeskTop"/>
+    <fullyQualifiedTypeName name="inherEx01.LapTop"/>
+    <fullyQualifiedTypeName name="inherEx01.Cals"/>
+    <fullyQualifiedTypeName name="inherEx01.AdvCals"/>
 </qualifiedTypeNameHistroy>
