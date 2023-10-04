@@ -35,4 +35,12 @@
     <fullyQualifiedTypeName name="inherEx01.AppleEx"/>
     <fullyQualifiedTypeName name="inherEx01.OsStarat"/>
     <fullyQualifiedTypeName name="inherEx01.Microsoft"/>
+    <fullyQualifiedTypeName name="java.lang.Error"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.jdbc.Driver"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
 </qualifiedTypeNameHistroy>
