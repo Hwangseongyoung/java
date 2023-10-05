@@ -75,3 +75,41 @@ JDBCPrj05Ex.java
 ISUD = CRUD
 ***************
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+jdbcPrj04 -> JDBCPrj04Ex.java
+
+mysql + jdbc
+db : shop
+table : items
+상품번호 : int, not null, pk
+상품이름 : not null, 문자열
+상품가격 : not null, 숫자
+상품재고 : not null, 숫자
+상품등록일 : not null, 날짜시간
+
+SELECT * FROM items;
+SELECT 컬럼1, 컬럼2... FROM 데이터베이스명;
+SELECT item_id, item_name FROM items;
+
+SELECT A.item_id, A.item_name FROM items A;   --->  items를 A로 지정하여 A.컬럼
+
+create database shop;
+use shop;
+
+create table items(
+	item_id int not null auto_increment,
+	item_name varchar(100) not null,
+	item_price int not null,
+	item_stock int not null,
+	item_date datetime not null,
+	primary key(item_id)
+);
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ItemsEx.java
+Items.java
+
+
+

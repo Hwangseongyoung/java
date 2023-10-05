@@ -45,5 +45,10 @@
     <fullyQualifiedTypeName name="jdbcPrj03.UpdateDao"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="jdbcPrj03.DeleteDao"/>
+    <fullyQualifiedTypeName name="jdbcPrj04.InsertDao"/>
+    <fullyQualifiedTypeName name="jdbcPrj04.ItemCrud"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="javax.imageio.plugins.tiff.GeoTIFFTagSet"/>
 </qualifiedTypeNameHistroy>
