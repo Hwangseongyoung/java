@@ -1,0 +1,57 @@
+create, drop
+insert, select, update, delete
+
+mydb
+회원가입 myinfo
+
+create table myinfo(
+	userid varchar(20) not null,
+	passwd varchar(20) not null,
+	age int not null
+);
+아이디, 비밀번호, 나이
+
+myinfoPrj
+
+MyinfoEx.java
+<html 상세보기(목록)> -> db -> 객체(model, entity, vo)
+-> jdbc
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+custPrj
+Customer.java
+CustomerDao.java
+연결()
+입력()
+출력()
+CustomerEx.java
+
+mydb;
+
+고객관리 프로그램 : customers
+
+create table customers(
+	id int not null,
+	email varchar(50) not null,
+	name varchar(20) not null,
+	salary int,
+	regdate date
+);
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+공유(누적), new 사용X -> 클래스이름.메소드명()
+
+staticPrj
+StaticEx.java
+
+StaticEx2.java
+
+Shop.java
+- 회원번호(자동으로 +1)
+- 회원아이디
+- 회원비밀번호
+
+ShopEx.java
