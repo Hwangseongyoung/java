@@ -1,0 +1,15 @@
+generic
+NoneGeneric.java
+
+Object01.java
+
+과일을 상자에 담기 : 객체
+연필을 상자에 담기 : 객체
+
+1. 객체타입의 편의성
+NoneGeneric
+Object
+
+Generic.java
+
+Generic02.java

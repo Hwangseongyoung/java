@@ -102,24 +102,43 @@ public class MemberDao {
 	}
 	
 //	회원삭제
-	int deleteMember(int pk) {
-		System.out.println("---------------------------------------------------------------");
-		System.out.println("                  4. 코리아아이티 회원삭제 화면");
-		System.out.println("---------------------------------------------------------------");
-		System.out.println();
+	int deleteMember(int pk) throws ClassNotFoundException, SQLException {
+		conn = db.getConnection();
 		
-		return 0;
+		String sql = "DELETE FROM member WHERE id = ?;";
+		
+		pstmt = conn.prepareStatement(sql);
+		pstmt.setInt(1, pk);
+		int result = pstmt.executeUpdate();
+		
+		return result;
 	}
 	
 //	회원검색
 //	pk검색
-	Member searchMember(int pk) {
-		System.out.println("---------------------------------------------------------------");
-		System.out.println("                  5. 코리아아이티 회원검색 화면");
-		System.out.println("---------------------------------------------------------------");
-		System.out.println();
+	Member searchMember(int searchId) throws ClassNotFoundException, SQLException {
+		conn = db.getConnection();
 		
-		return null;
+		String sql = "SELECT * FROM member WHERE id = ?;";
+		pstmt = conn.prepareStatement(sql);
+		pstmt.setInt(1, searchId);
+		rs = pstmt.executeQuery();
+		
+		Member m = null;
+		if(rs.next()) {
+			m = new Member();
+			m.setId(rs.getInt(1));
+			m.setEmail(rs.getString(2));
+			m.setPasswd(rs.getString(3));
+			m.setName(rs.getString(4));
+			m.setDepart(rs.getString(5));
+			m.setPosition(rs.getString(6));
+			m.setSalary(rs.getInt(7));
+			m.setStartDate(rs.getString(8));
+			m.setEndDate(rs.getString(9));
+		}
+		
+		return m;
 	}
 //	종료
 	void disconnect() {

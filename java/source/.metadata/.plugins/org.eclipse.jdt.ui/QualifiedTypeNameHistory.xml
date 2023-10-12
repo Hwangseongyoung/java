@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="tut10.dao.ScoresDao"/>
-    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="emp.service.EmployeeSrv"/>
     <fullyQualifiedTypeName name="emp.vo.Employee"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="jdbcPrj05.DBConnect"/>
     <fullyQualifiedTypeName name="jdbcPrj05.MemberDao"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="generic.FruitBox"/>
+    <fullyQualifiedTypeName name="generic.PencilBox"/>
+    <fullyQualifiedTypeName name="generic.Pencil"/>
 </qualifiedTypeNameHistroy>
