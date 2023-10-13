@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="emp.service.EmployeeSrv"/>
-    <fullyQualifiedTypeName name="emp.vo.Employee"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="list02.Member"/>
-    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
-    <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="java.io.OutputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.Closeable"/>
     <fullyQualifiedTypeName name="inherEx01.DeskTop"/>
     <fullyQualifiedTypeName name="inherEx01.LapTop"/>
     <fullyQualifiedTypeName name="inherEx01.Cals"/>
@@ -60,4 +48,16 @@
     <fullyQualifiedTypeName name="generic.FruitBox"/>
     <fullyQualifiedTypeName name="generic.PencilBox"/>
     <fullyQualifiedTypeName name="generic.Pencil"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="exception.UseridCheckException"/>
+    <fullyQualifiedTypeName name="exception.LoginCheck"/>
+    <fullyQualifiedTypeName name="javax.security.auth.login.LoginException"/>
+    <fullyQualifiedTypeName name="exception.UserException"/>
 </qualifiedTypeNameHistroy>

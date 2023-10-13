@@ -1,0 +1,41 @@
+자바(로컬) : 컴파일언어(타입 강형)
+javac 클래스이름.java - > 컴파일(JVM 인식) -> (클래스이름.class) -> java 클래스이름(실행)
+			Compile				       Runtime
+
+서버 : 여러 사람이...
+웹 언어 : 인터프리터 언어
+
+예외 : 문제가 생기면 적절하게 개발자가 조정 가능
+에러 : 개발자 조정할 수 X => JVM
+
+jdk + jre
+
+Throwable(최상위)
+
+exception
+Exception01.java
+
+ - Exception : 컴파일
+   1. ClassNotFoundE~ : Class.forName(디비);
+   2. IOE~
+   3. FileNotFoundE~ : 파일이 없는 경우
+   4. InterrupE~ : 쓰레드
+   5. CloneNotSupportEx~ : clone 객체 사용할 때
+
+ - Runtime Exception : 실행 단위
+   1. ArimetricEx~ : 나누기예외
+   2. ArrayIndexOutBoundE~
+   3. NullPointEx~
+
+-----------------------------------------------------------------------------------------------------
+
+사용자 아이디 체크(exceotion)
+Exception 상속 받아서 생성자를 이용해서 예외 클래스 작성
+
+사용
+
+UseridCheckEx.java
+
+-----------------------------------------------------------------------------------------------------
+
+LoginEx.java
