@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="inherEx01.DeskTop"/>
     <fullyQualifiedTypeName name="inherEx01.LapTop"/>
     <fullyQualifiedTypeName name="inherEx01.Cals"/>
     <fullyQualifiedTypeName name="inherEx01.AdvCals"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="exception.LoginCheck"/>
     <fullyQualifiedTypeName name="javax.security.auth.login.LoginException"/>
     <fullyQualifiedTypeName name="exception.UserException"/>
+    <fullyQualifiedTypeName name="lamda.ConcatStrImpl"/>
 </qualifiedTypeNameHistroy>
