@@ -1,0 +1,99 @@
+1. koritbs.cafe24.com
+   - 60점
+
+2. Mysql 데이터베이스
+(1) CUI : cmd
+
+(2) GUl : Workbench
+
+DDL
+DML
+DCL : grant, revoke
+
+create user 아이디@'%' identified by '비밀번호';
+grant all privileges on 사용할DB이름 to 아이디@'%' with grant option;
+
+아이디 -> koreait
+비밀번호 -> 1234
+사용할DB이름 -> koreait
+
+create user koreait@'%' identified by '1234';
+grant all privileges on koreait to koreait@'%' with grant option;
+
+alter user koreait@'%' identified with mysql_native_password by '1234';
+
+flush privileges;
+
+koreait / 1234
+서버(관리자 1명 : root)
+-> 사용할 수 있는 아이디인지 확인
+-> 관리자가 데이터베이스 생성(아이디)
+-> 사용자 계정(root) : 아이디, 비밀번호(koreait, 1234)
+-> 명령어를 이용해서 생성, 권한설정, 새로고침
+
+-------------------------------------------------------------------------------------------------------------------
+
+mydb / 1234
+
+insert into member2 values('koreait', '1234');
+
+selcet * from member2;
+
+-------------------------------------------------------------------------------------------------------------------
+
+shopdb / 1234
+
+root ->
+user mysql;
+select host, user from user;
+
+create database shopdb;
+
+create user shopdb@'%' identified by '1234';
+grant all on shopdb.* to shopdb@'%' with grant option;
+flush privileges;
+
+사용자계정접근 : 만든 데이터베이스 접근
+mysql -u데이터베이스이름 -p
+
+use shopdb;
+
+create table items(
+	item_id int,
+	item_name varchar(100)
+);
+
+show tables;
+
+create table cart(
+	cart_id int,
+	cart_item_name varchar(20)
+);
+
+-------------------------------------------------------------------------------------------------------------------
+
+DDL : Definition : 정의어 => CREATE, DROP, ALTER(변경)
+
+Rename
+테이블 이름
+
+- tbl_board => tbl_article
+RENAME TABLE tbl_board TO tbl_article;
+
+- tbl_config => tbl_env
+Alter Table... -> 이름변경
+
+- 컬럼 추가
+ALTER TABLE tbl_article ADD tbl_article_date datetime;
+
+- 컬럼타입 변경
+ALTER TABLE tbl_article MODIFY COLUMN tbl_board_name varchar(50);
+
+- 컬럼명 변경
+ALTER TABLE tbl_article RENAME COLUMN tbl_board_name TO tbl_article_name;
+
+- 컬럼추가 끼워넣기
+ALTER TABLE tbl_article ADD tbl_article_content varchar(100) AFTER tbl_article_name;
+
+- 컬럼제거
+ALTER TABLE tbl_article DROP COLUMN tbl_article_content;
