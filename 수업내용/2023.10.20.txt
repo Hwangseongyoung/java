@@ -44,7 +44,7 @@ selcet * from member2;
 shopdb / 1234
 
 root ->
-user mysql;
+use mysql;
 select host, user from user;
 
 create database shopdb;
