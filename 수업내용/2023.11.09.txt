@@ -1,0 +1,147 @@
+1. mysql(mariadb)
+2. oracle xe : sqldeveloper(jdk 포함) -> toad
+- html, javascript(json ->)
+
+sqldeveloper 다운로드
+
+------------------------------------------------------------
+
+- oracle xe
+
+1. 계정 생성
+- system 계정 접속
+	- sqlplus
+	- system
+	- 비밀번호 입력(안뜸) -> 1234
+
+- 계정생성/접속권한(db 생성X) -> 용량 해제
+	- create user c##testdb identified by 1234;
+	- 보안 해제
+		-> alter session set "_ORACLE_SCRIPT" = true;
+		   create user scott identified by tiger;  --> 생성
+		   grant connect, resource, dba to scott;  --> 권한 허용
+		   ( alter user scott default tablespace users quota unlimited on users;  --> 용량 해제 )  --> 생략가능
+
+		   commit;  --> 설정 사항 그대로 저장
+
+		   cmd 접속 확인
+		   sqldeveloper 확인
+
+----------------------------------------------------------------------------------------------
+
+varchar -> varchar2
+int -> number
+now -> sysdate
+
+
+member
+아이디, 이름, 비밀번호, 성별, 급여
+문자열 : 숫자, 영문자(1byte), 한글(2byte)
+
+create table member(
+	userid varchar2(20),
+	username varchar2(20),
+	passwd varchar2(20),
+	gender char(1),
+	salary number(4),
+	regdate date
+);
+
+insert into member values('hong', '홍길동', '1234', 'M', 100, sysdate);
+
+select * from member;
+
+----------------------------------------------------------------------------------------------------
+
+순서
+seq
+sequence
+auto_increment = sequence
+
+- mysql
+create table test(
+	id int not null auto_increment
+);
+insert into test values(null);
+
+- oracle
+테이블 생성
+create table test(
+	id number(10) not null
+);
+
+시퀀스(자동 번호 부여) 쿼리 작업
+create sequence 시퀀스이름
+
+create sequence ex_seq
+increment by 1
+start with 1
+minvalue 1
+maxvalue 9999
+nocache
+nocycle
+nooreder;
+
+insert into test values(시퀀스이름.nextval);
+insert into test values(ex_seq.nextval);
+
+
+/ 만들어진 시퀀스 정보 확인
+
+// dual 오라클에서 사용하는 가상 테이블(단순 출력)
+
+// 최근(최대) 시퀀스 번호
+select ex_seq.currval from dual;
+
+// 시퀀스 정보
+select * from user_sequences;
+
+-----------------------------------------------------------------------------------
+
+drop sequence ex_seq;
+select * from user_sequences;
+
+drop table test;
+
+----------------------------------------------------------------------------------
+
+회원정보 users(번호, 아이디, 이름, 급여, 날짜)
+시퀀스 -> 테이블 -> 입력
+user_seq
+
+create sequence user_seq
+start with 1
+increment by 1
+minvalue 1
+maxvalue 9999
+nocycle
+nocache
+NOORDER;
+
+select * from user_sequences;
+
+create table users(
+	num number,
+	userid varchar2(20),
+	username varchar2(20),
+	salary number,
+	regdate date
+);
+
+desc users;
+
+insert into users values(user_seq.nextval, 'kim', '김부산', 100, sysdate);
+select * from users;
+
+insert into users values(user_seq.nextval, 'kim', '김부산', 100, sysdate);
+select * from users order by num desc;
+
+select count(*) from users;
+
+select count(*) as count from users;
+select count(*) as "회원 수" from users;
+
+drop sequence user_seq;
+drop table users;
+
+select * from user_sequences;
