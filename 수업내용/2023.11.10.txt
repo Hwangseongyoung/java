@@ -1,0 +1,69 @@
+오라클
+
+부서 : dept
+코드, 이름
+create table dept(
+	dept_code varchar2(3),
+	dept_name varchar2(10),
+	primary key(dept_code)
+);
+
+insert into dept values('100', '인사과');
+insert into dept values('200', '자재과');
+insert into dept values('300', '비서실');
+insert into dept values('900', '임원실');
+
+시퀀스 : emp_seq
+create sequence emp_seq start with 1 increment by 1 minvalue 1 maxvalue 9999 nocycle nocache;
+
+select * from user_sequences;
+
+사원등록 : emp
+시퀀스번호, 이름, 비번, 키, 성별, 날짜
+create table emp(
+	emp_num number not null,
+	emp_name varchar2(10),
+	emp_passwd varchar2(20),
+	emp_height number(5,2),
+	emp_gender char(1),
+	emp_regdate date,
+	dept_code varchar2(3),
+	primary key(emp_num),
+	foreign key(dept_code) references dept(dept_code)
+);
+
+insert into emp values(emp_seq.nextval, '홍길동', '1111', 190.12, 'M', sysdate, '100');
+insert into emp values(emp_seq.nextval, '이영희', '2222', 160.12, 'F', sysdate, '200');
+insert into emp values(emp_seq.nextval, '김철수', '3333', 180.12, 'M', sysdate, '300');
+
+select emp_num from emp;
+
+1개만 출력
+select * from emp where rownum <= 1;
+
+select * from emp where rownum <= 2 order by emp_num desc;
+
+내부쿼리
+데이터를 정렬한 후 => rownum 개수를 맞춰서
+
+SELECT * FROM (select * from emp order by emp_num DESC) where rownum <= 2;
+
+limit 10, 20
+
+inner join ~ on
+
+dept, emp
+
+내부조인
+select D.dept_name, E.emp_name, E.emp_regdate from dept D inner join emp E on D.dept_code = E.dept_code;
+
+조인 -> 그룹화
+인사과(1), 자재과(1), 비서실(1)
+
+select D.dept_name, count(E.emp_num) from dept D inner join emp E on D.dept_code = E.dept_code
+group by D.dept_name;
+
+사원 수가 10명 이상인 부서(사원수) 표시하시오.
+select D.dept_name, count(E.emp_num) from dept D inner join emp E on D.dept_code = E.dept_code
+group by D.dept_name
+having count(E.emp_num) >= 10;
