@@ -1,0 +1,25 @@
+html
+oracle, mysql
+
+linux 계정 -> db 일반 -> db root
+
+조인, 데이터 개수 처리
+
+select * from buseo B inner join emp E on B.buseo_code = E.buseo_code;
+
+select B.*, E.* from buseo B inner join emp E on B.buseo_code = E.buseo_code;
+
+select B.* from buseo B inner join emp E on B.buseo_code = E.buseo_code;
+
+select count(E.emp_num) from buseo B inner join emp E on B.buseo_code = E.buseo_code;
+
+select count(E.emp_num) from buseo B inner join emp E on B.buseo_code = E.buseo_code where E.emp_kor_name = '홍길동';
+
+
+1. 원하는 자료 개수 추출하기(처음 값부터 개수만큼 출력)
+정렬 fetch first 개수 rows only;
+select * from buseo order by buseo_code desc fetch first 2 rows only;
+
+2. 원하는 위치의 자료를 추출하기 : offset 건너뛰기
+정렬 offset 0 row fetch first 개수 rows only;
+select * from buseo order by buseo_code desc offset 1 row fetch first 2 rows only;
